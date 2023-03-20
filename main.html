@@ -8,6 +8,34 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<form>
+		<label for="name">Name</label>
+			<input type="text" id="name" placeholder="Name"><br>
+		<label for="email">Email</label>
+			<input type="email" id="email" placeholder="Email"><br>
+		<p>Gender</p>
+		<label for="male">Male</label>
+			<input type="radio" id="male" name="Gender" value="Male">
+		<label for="female">Female</label>
+			<input type="radio" id="female" name="Gender" value="Female">
+		<label for="others">Others</label>
+			<input type="radio" id="others" name="Gender" value="Others"><br>
+		<label for="Laptop_brands">Laptop Brands</label>
+		<select id="Laptop_brands" name="brands" aria-multiselectable>
+			<option value="HP">HP</option>
+			<option value="Lenovo">Lenovo</option>
+			<option value="Dell">Dell</option>
+			<option value="Asus">Asus</option>
+		</select><br>
+		<label for="age">Age</label>
+			<input type="number" id="age" placeholder="Age"value="number"><br>
+		<label>Date Of Birth</label>
+			<input type="date" id="Dob" placeholder="Date Of Birth" value="date"><br>
+		<label for="password">Password</label>
+			<input type="password" id="password" value="password" placeholder="password">
+
+		<input type="submit" id="submit" value="submit">
+	</form>
     <script type="text/javascript" src="./script.js">
 </script>
 
