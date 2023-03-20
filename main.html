@@ -8,34 +8,49 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form method>
-		<label for="name">Name</label>
-			<input type="text" id="name" placeholder="Name" required><br>
-		<label for="email">Email</label>
-			<input type="email" id="email" placeholder="Email"><br>
-		<p>Gender</p>
-		<label for="male">Male</label>
-			<input type="radio" id="male" name="Gender" value="Male">
-		<label for="female">Female</label>
-			<input type="radio" id="female" name="Gender" value="Female">
-		<label for="others">Others</label>
-			<input type="radio" id="others" name="Gender" value="Others"><br>
-		<label for="Laptop_brands">Laptop Brands</label>
-		<select id="Laptop_brands" name="brands" aria-multiselectable>
-			<option value="HP">HP</option>
-			<option value="Lenovo">Lenovo</option>
-			<option value="Dell">Dell</option>
-			<option value="Asus">Asus</option>
-		</select><br>
-		<label for="age">Age</label>
-			<input type="number" id="age" placeholder="Age"value="number"><br>
-		<label>dob</label>
-			<input type="date" id="dob" placeholder="Date Of Birth" value="date"><br>
-		<label for="password">Password</label>
-			<input type="password" id="password" value="password" placeholder="password">
-
-		<input type="submit" id="submit" value="submit">
-	</form>
+<form>
+<form method="post">
+  <div class="required">
+    <label for="name">Name*</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+  <div class="required">
+    <label for="email">Email*</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <div>
+    <label for="gender">Gender*</label><br>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="other" required>
+    <label for="other">Other</label>
+  </div>
+  <div>
+    <label for="laptop">Laptop Brands</label>
+    <select id="laptop" name="laptop">
+      <option value="apple">Apple</option>
+      <option value="asus">Asus</option>
+      <option value="hp">HP</option>
+    </select>
+  </div>
+  <div class="required">
+	  <label for="age">Age*</label>
+	  <input type="number" id="age" placeholder="Age"value="number" required>
+  </div>
+	<div class="required">
+		<label for="dob">DOB*</label>
+		<input type="date" id="dob" value="date" required>
+	</div>
+	<div class="required">
+		<label for="Password">Password*</label>
+		<input type="password" id="Password" placeholder="password" required>
+	</div>
+	<div>
+		<input type="submit" value="Submit" id="submit">
+	</div>
+</form>
     <script type="text/javascript" src="./script.js">
 </script>
 
